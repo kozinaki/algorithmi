@@ -1,18 +1,15 @@
-package net.kozinaki.algorithmi.sort;
+package net.kozinaki.fundamenta.algorithm.sort;
 
-public class InsertSorterImpl extends Sort {
-
-    static {
-        Sort.instance = new InsertSorterImpl();
-    }
+public class InsertSortImpl implements Sort {
 
     @Override
     public int[] sort(int[] unsorted) {
-        for(int i = 1, j = i, temp = 0; i < unsorted.length; j = ++i) {
-            temp = unsorted[i];
+        for (int i = 1; i < unsorted.length; i++) {
+            int j = i;
+            int temp = unsorted[i];
             while(j > 0 && unsorted[j - 1] >= temp) {
                 unsorted[j] = unsorted[j - 1];
-                --j;
+                j--;
             }
             unsorted[j] = temp;
         }

@@ -1,10 +1,8 @@
-package net.kozinaki.algorithmi.sort;
-
-import java.util.Arrays;
+package net.kozinaki.fundamenta;
 
 public class App {
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         int size = Integer.parseInt(args[0]);
         BubbleSorterImpl bubbleSorter = new BubbleSorterImpl();
         random(bubbleSorter, size);
@@ -12,7 +10,7 @@ public class App {
         sorted(bubbleSorter, size);
 
         System.out.println("---------------");
-        
+
         SelectSorterImpl simpleSorter = new SelectSorterImpl();
         random(simpleSorter, size);
         unsorted(simpleSorter, size);
@@ -25,9 +23,9 @@ public class App {
         unsorted(insertSorter, size);
         sorted(insertSorter, size);
 
-    }
-
-    public static void random(Sorter sorter, int size) {
+    }*/
+/*
+    public static void random(Sort sorter, int size) {
         int[] src = new int[size];
         for(int i = 0; i < src.length; i++)
             src[i] = (int)(Math.random() * size + 1);
@@ -42,7 +40,7 @@ public class App {
         System.out.println(" - " + (time / 1000.0));
     }
 
-    public static void unsorted(Sorter sorter, int size) {
+    public static void unsorted(Sort sorter, int size) {
         int[] src = new int[size];
         for(int i = 0; i < src.length; i++)
             src[i] =  src.length - i;
@@ -57,7 +55,7 @@ public class App {
         System.out.println(" - " + (time / 1000.0));
     }
 
-    public static void sorted(Sorter sorter, int size) {
+    public static void sorted(Sort sorter, int size) {
         int[] src = new int[size];
         for(int i = 0; i < src.length; i++)
             src[i] =  i + 1;
@@ -70,6 +68,6 @@ public class App {
         if(size < 28)
             System.out.println(" - " + Arrays.toString(src));
         System.out.println(" - " + (time / 1000.0));
-    }
+    }*/
 
 }
